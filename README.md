@@ -20,7 +20,6 @@ nginx.conf 一般會放在 /etc/nginx
 
 api.conf api.upstream web.conf web.upstream 檔案放在 /etc/nginx/default.d
 
-
 ## API Reference
 
 無
@@ -36,3 +35,8 @@ api.conf api.upstream web.conf web.upstream 檔案放在 /etc/nginx/default.d
 ## License
 
 無
+
+## Others
+因為 log 檔增長太快, 設定排程每天 1am 砍 *.gz
+crontab -e
+* 1 * * * sudo find /var/log/nginx -type f -name '*.gz' -exec rm {} +
