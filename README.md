@@ -18,11 +18,8 @@ proxy_pass 去掉後端的 PORT 號
 
 nginx.conf 一般會放在 /etc/nginx 
 
-以下幾個檔案放在 /etc/nginx/default.d
-api.conf
-api.upstream
-web.conf
-web.upstream
+api.conf api.upstream web.conf web.upstream 檔案放在 /etc/nginx/default.d
+
 
 ## API Reference
 
