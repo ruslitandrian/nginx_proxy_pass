@@ -1,0 +1,7 @@
+upstream http_backend {
+    #ip_hash;
+    server dstapi01.tutorabc.com:50002;
+    server dstapi02.tutorabc.com:50002;
+    #server dsapi.tutorabc.com:50002;
+    keepalive 16;
+}
