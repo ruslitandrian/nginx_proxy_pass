@@ -1,6 +1,6 @@
 upstream CustomerCare_backend {
     ip_hash;
-    server dstapi01.tutorabc.com:33148;
-    server dstapi02.tutorabc.com:33148;
+    server def1.abc.com:33148;
+    server def2.abc.com:33148;
     keepalive 16;
 }
